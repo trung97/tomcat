@@ -33,7 +33,10 @@ public class CompanyRegisterServer extends RegisterServer {
 	private int serialNumber;
 	private String kind;
 	private String status;
-	
+	public CompanyRegisterServer() {
+        super();
+        // TODO Auto-generated constructor stub
+}
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		// getParameterFromRequest(req);

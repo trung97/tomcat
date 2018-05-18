@@ -32,7 +32,12 @@ public class StudentRegisterServer extends RegisterServer {
 	private String expected;
 
 	private String status;
+	public StudentRegisterServer() {
+		// TODO Auto-generated constructor stub
 	
+        super();
+        // TODO Auto-generated constructor stub
+}
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		//getParameterFromRequest(req);
