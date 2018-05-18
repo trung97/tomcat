@@ -11,6 +11,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -24,11 +25,15 @@ import key.CompanySearchJSONKey;
 import myserver.Server;
 
 
+@WebServlet("/companysearch")
 public class CompanySearchServer extends Server {
 	
 	
 	
-	
+	public CompanySearchServer() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		

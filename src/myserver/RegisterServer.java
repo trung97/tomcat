@@ -24,6 +24,10 @@ public abstract class RegisterServer extends Server{
 	protected String date;
 	protected DatabaseManagement databaseManagement;
 	
+	public RegisterServer() {
+	        super();
+	        // TODO Auto-generated constructor stub
+	}
 	
 	protected abstract String createQuery();
 	protected boolean isExistUsername() {

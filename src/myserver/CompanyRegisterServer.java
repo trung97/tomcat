@@ -12,6 +12,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -21,6 +22,8 @@ import org.json.simple.parser.JSONParser;
 import db.DatabaseManagement;
 import stt.Status;
 
+
+@WebServlet("/companyregister")
 public class CompanyRegisterServer extends RegisterServer {
 
 	/**
@@ -30,7 +33,7 @@ public class CompanyRegisterServer extends RegisterServer {
 	private int serialNumber;
 	private String kind;
 	private String status;
-
+	
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		// getParameterFromRequest(req);

@@ -11,6 +11,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -21,6 +22,7 @@ import org.json.simple.parser.ParseException;
 import db.DatabaseManagement;
 import stt.Status;
 
+@WebServlet("/studentregister")
 public class StudentRegisterServer extends RegisterServer {
 	
 	private String sex;

@@ -23,7 +23,7 @@ import db.DatabaseManagement;
 /**
  * Servlet implementation class ReturnListFollowing
  */
-
+@WebServlet("/returnlistfollowing")
 public class ReturnListFollowing extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        

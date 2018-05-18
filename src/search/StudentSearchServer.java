@@ -9,6 +9,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -21,9 +22,13 @@ import db.DatabaseManagement;
 import key.CompanySearchJSONKey;
 import key.StudentSearchJSONKey;
 import myserver.Server;
-
+@WebServlet("/studentsearch")
 public class StudentSearchServer extends Server {
 
+	public StudentSearchServer() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
 	@Override
 	protected void sendResponse(HttpServletResponse resp) {
 		// TODO Auto-generated method stub
