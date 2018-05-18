@@ -22,7 +22,7 @@ public class DatabaseManagement {
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
 			con = DriverManager.getConnection("jdbc:mysql://" + "jws-app-mysql" + ":" + "3306" + "/"
-			+ "lllc");
+			+ "lllc","user","password");
 			username = ""; password ="";
 		} catch (ClassNotFoundException e) {
 			// TODO Auto-generated catch block
