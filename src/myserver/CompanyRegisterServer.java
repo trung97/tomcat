@@ -132,7 +132,7 @@ public class CompanyRegisterServer extends Server {
 				if (isExistUsername()) {
 					status = Status.STATUS_EXIST;
 				} else {
-					insertToUser("company");
+					insertToUser("doanhnghiep");
 					status = Status.STATUS_FAIL;
 					Connection connection = databaseManagement.getConnection();
 
