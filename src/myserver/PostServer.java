@@ -12,6 +12,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -23,9 +24,8 @@ import org.json.simple.parser.ParseException;
 import db.DatabaseManagement;
 import key.PostJSONKey;
 import stt.Status;
-
-public class PostServer extends Server {
-	
+@WebServlet("/PostServer")
+public class PostServer extends Server {	
 	
 	
 	private String title;
@@ -36,7 +36,10 @@ public class PostServer extends Server {
 	private DatabaseManagement databaseManagement;
 	private String status;
 	private int number;
-
+	public PostServer() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
 	@Override
 	protected void sendResponse(HttpServletResponse resp) {
 		jsonObject = new JSONObject();
