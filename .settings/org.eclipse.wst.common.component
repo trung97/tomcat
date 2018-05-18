@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
-    <wb-module deploy-name="JobboxServer">
-        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
-        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
-        <dependent-module archiveName="rt.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/JRE_LIB">
-            <dependency-type>uses</dependency-type>
-        </dependent-module>
-        <property name="context-root" value="JobboxServer"/>
-        <property name="java-output-path" value="/JobboxServer/build/classes"/>
+    <wb-module deploy-name="MobileServer-0.0.1-SNAPSHOT">
+        <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resource"/>
+        <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/webapp"/>
+        <property name="context-root" value="MobileServer"/>
+        <property name="java-output-path" value="/MobileServer/build/classes"/>
     </wb-module>
 </project-modules>
