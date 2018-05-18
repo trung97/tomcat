@@ -50,7 +50,6 @@ public class LoginServer extends Server {
 		
 		try {
 			System.out.println("receive reqe");
-			System.out.println(resp.toString());
 			getParameterFromRequest(req);
 			
 			String inputUserName= jsonObject.get("username").toString();
@@ -181,6 +180,7 @@ public class LoginServer extends Server {
 			BufferedReader reader = req.getReader();
 			while ((line = reader.readLine()) != null) in.append(line);
 			jsonObject= (JSONObject)parser.parse(in.toString());
+			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

@@ -104,14 +104,17 @@ public class StudentRegisterServer extends RegisterServer {
 				preparedStatement.execute();
 				preparedStatement.close();
 				status = Status.STATUS_SUCCESS;
-				sendResponse(resp);
+				
 			} catch (SQLException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			} catch (java.text.ParseException e) {
 				e.printStackTrace();
 			} 
+			
+			
 		}
+		sendResponse(resp);
 	}
 
 	@Override

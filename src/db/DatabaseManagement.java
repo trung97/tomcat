@@ -21,7 +21,7 @@ public class DatabaseManagement {
 		this.password = password;
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
-			con = DriverManager.getConnection("jdbc:mysql://" + "jws-app-mysql" + ":" + "3306" + "/"
+			con = DriverManager.getConnection("jdbc:mysql://" + "jws-app-mysql/172.30.128.242" + ":" + "3306" + "/"
 			+ "lllc","user","password");
 			username = ""; password ="";
 		} catch (ClassNotFoundException e) {
@@ -38,6 +38,6 @@ public class DatabaseManagement {
 	}
 	
 	public static void main(String[] args) {
-		DatabaseManagement db = DatabaseManagement.getInstance("root", "");
+		DatabaseManagement db = DatabaseManagement.getInstance("user", "password");
 	}
 }
