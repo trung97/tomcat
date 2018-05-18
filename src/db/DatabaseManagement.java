@@ -16,13 +16,13 @@ public class DatabaseManagement {
 		}
 		return instance;
 	}
-	
 	private DatabaseManagement(String username,String password){
 		this.username = username;
 		this.password = password;
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
-			con = DriverManager.getConnection("jdbc:mysql://localhost/DBG24", username, "123456");
+			con = DriverManager.getConnection("jdbc:mysql://" + "jws-app-mysql" + ":" + "3306" + "/"
+			+ "lllc");
 			username = ""; password ="";
 		} catch (ClassNotFoundException e) {
 			// TODO Auto-generated catch block
