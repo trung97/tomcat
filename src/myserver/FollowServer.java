@@ -40,6 +40,14 @@ public class FollowServer extends Server {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		// TODO Auto-generated method stub
 		getParameterFromRequest(req);
 		System.out.println(jsonObject.toJSONString());
 		
@@ -70,14 +78,6 @@ public class FollowServer extends Server {
 			e.printStackTrace();
 		}
 		sendResponse(resp);
-	}
-
-	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
-	 */
-	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		doGet(req, resp);
 	}
 
 	@Override

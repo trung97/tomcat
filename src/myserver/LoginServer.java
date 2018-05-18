@@ -24,7 +24,7 @@ import db.DatabaseManagement;
 import key.StudentSearchJSONKey;
 import stt.Status;
 
-@WebServlet("/login")
+@WebServlet("/LoginServer")
 public class LoginServer extends Server {
 	private boolean checkUser; 
 	private boolean checkPass;

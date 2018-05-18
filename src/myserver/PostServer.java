@@ -55,7 +55,12 @@ public class PostServer extends Server {
 
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		getParameterFromRequest(req);
+		
+	}
+
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+getParameterFromRequest(req);
 		
 		databaseManagement = DatabaseManagement.getInstance("root", "hdl123");
 		status = Status.STATUS_FAIL;
@@ -96,11 +101,6 @@ public class PostServer extends Server {
 		}
 		
 		sendResponse(resp);
-	}
-
-	@Override
-	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		doGet(req, resp);
 	}
 
 	@Override

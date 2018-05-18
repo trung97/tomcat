@@ -14,7 +14,6 @@ import org.json.simple.JSONObject;
 /**
  * Servlet implementation class Server
  */
-@WebServlet("/Server")
 public abstract class Server extends HttpServlet {
 	private static final long serialVersionUID = 1L;
     protected JSONObject jsonObject;
